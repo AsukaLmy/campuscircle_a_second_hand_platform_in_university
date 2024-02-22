@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            background-color: #eee;
+        }
+        /* *{
+            border: 1px solid black;
+        } */
+        .flex{
+            display: flex;
+        }
+        .whitebox{
+            background-color: white;
+        }
+        .flex1{
+            flex:1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+        .menu{
+            padding: 10px 20px ;
+            border-bottom: 1px solid grey;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body class="flex">
+    <!--top menu-->
+    <div style="width: 200px; z-index: 2;" class="whitebox">
+        <!--user info-->
+        <div style="padding: 10px; align-items: center; justify-content: center; border-bottom: 1px solid #999;" class="flex">
+            <img 
+            src="moth.png" 
+            width="40px" 
+            height="40px"
+            alt=""/>
+            <div style="margin-left: 10px;">Username</div>
+
+        </div>
+        <!--category-->
+        <div class="flex1">
+            <div class="menu">menu1</div>
+            <div class="menu">menu2</div>
+            <div class="menu">menu3</div>
+            <div class="menu">menu4</div>
+            <div class="menu">menu5</div>
+        </div>
+    </div>
+    <!--main body-->
+    <div class="flex1 flex column">
+        <!--head-->
+        <div style="height:60px; z-index: 1;"; class="whitebox"></div>
+        <!--content-->
+        <div style="overflow: auto;" class="flex1 flex">
+            <!--left-->
+            <div style="flex:3" class="flex column mg8">
+                <!--data-->
+                <div class="flex">
+                    <!--information box-->
+                    <div style="height:100px;" class="flex1 whitebox mgr8"></div>
+                    <div style="height:100px;" class="flex1 whitebox mgr8"></div>
+                    <div style="height:100px;" class="flex1 whitebox mgr8"></div>
+                    <div style="height:100px;" class="flex1 whitebox mgr8"></div>
+                </div>
+                <!--list-->
+                <div class="flex column">
+                    <div style="height:160px;" class="whitebox mgt8"></divstyle>
+                    <div style="height:160px;" class="whitebox mgt8"></divstyle>
+                    <div style="height:160px;" class="whitebox mgt8"></divstyle>
+                </div>
+            </div>
+            <!--right-->
+            <div style="flex:1" class="flex column mgr8 mgt8">
+                <!--reminder-->
+                <div style="height: 150px;" class="whitebox"></div>
+                <!--message-->
+                <div style="height: 300px;" class="whitebox mgt8"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
